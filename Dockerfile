@@ -19,7 +19,13 @@ RUN dnf update -y && dnf install -y \
 RUN pip install --no-cache-dir \
     numpy \
     asyncio \
-    multiprocess
+    multiprocess \
+    aiohttp \
+    aiodns \
+    Pillow \
+    requests \
+    setuptools \
+    Cython
 
 # Expõe a porta (caso necessário para futuras extensões ou APIs)
 EXPOSE 8000
